@@ -1,0 +1,123 @@
+\documentclass[11pt]{article}
+\topmargin=-.50in
+\textheight=9.0in
+\textwidth=6.5in
+\oddsidemargin=-0.25in
+\evensidemargin=-0.25in
+
+\usepackage{times}
+\usepackage{amssymb}
+\usepackage{amsmath}
+
+\newcommand{\theset}[1]{\left\{#1\right\}}
+\newcommand{\magn}[1]{\left| #1 \right|}
+\newcommand{\norm}[1]{\left\Vert #1 \right\Vert}
+
+\newcommand{\st}{\textrm{\ \Big\vert\ }}
+\newcommand{\tr}{^\mathrm{T}}
+\newcommand{\one}{\mathbf{1}}
+\newcommand{\zero}{\mathbf{0}}
+\newcommand{\expect}[1]{\mathbf{E}\left[#1\right]}
+\newcommand{\given}{\text{~}\big\vert\text{~}}
+\newcommand{\prob}[1]{\mathbf{Pr}\left[#1\right]}
+\newcommand{\amp}{\ \&\ }
+
+\begin{document}
+
+\section*{Document preparation}
+
+\begin{itemize}
+
+\item Never start a sentence with a symbol:
+\begin{center}
+$F$ denotes the model $\Rightarrow$ The model is denoted by $F$. ---or--- The symbol $F$ denotes the model.
+\end{center}
+It's ok if a symbol follows a comma as part of a continuation, e.g.,
+\begin{center}
+In this equation, $f$ denotes the first part, $g$ denotes the second part, and $h$ denotes the last part.
+\end{center}
+
+\item Use text font when abbreviating something or writing a word in math mode:
+$$x_{opt} \Rightarrow x_\mathrm{opt}$$
+$$x_{blue} \Rightarrow x_\mathrm{blue}$$
+
+\item Always use the so-called ``Oxford comma''
+\begin{center}
+The sizes are large, medium and small. $\Rightarrow$ The sizes are large, medium, and small.
+\end{center}
+A humorous example of ambiguity is the sentence
+\begin{center}
+I went to the park with my dogs, Bill and Ted. $\Leftrightarrow$ I went to the park with my dogs, Bill, and Ted.
+\end{center}
+
+\item When separating words, use a dash. When separating numbers, use an en-dash. When separating phrases, use an em-dash:
+\begin{center}
+The multi-agent case is discussed in pages 3--5 of the appendix---if anywhere at all.
+\end{center}
+
+\item \LaTeX\  inserts extra space after periods (except after a capital letter). Sometimes, the extra space is unwanted, e.g., after abbreviations:
+\begin{itemize}
+\item Prof. Lastname
+\item Prof.\ Lastname
+\end{itemize}
+It's subtle, but it's there! Another case is referring to figures, e.g., Fig. 3 vs Fig.\ 3.\\
+To avoid the extra space, in \LaTeX\ code either use backslash-space or tilde (instead of space):
+\begin{center}
+\texttt{Prof.\textbackslash\ Lastname} or 
+\texttt{Prof.$\sim$Lastname}
+\end{center}
+The tilde option will prevent a line break after the period.
+
+\item Regarding bibliographies:
+\begin{itemize}
+\item Use en-dashes to separate page numbers.
+\item The titles of books or conference proceedings are capitalized:
+\begin{center}
+The book of game theory $\Rightarrow$ The Book of Game Theory
+\end{center}
+\item The titles of papers are not capitalized, but an exception is the word immediately following a colon:
+\begin{center}
+The paper of game theory: recent work $\Rightarrow$ The paper of game theory: Recent work
+\end{center}
+\item To assure capitalization in a bibliography, write the capital letter in between brackets:
+\begin{center}
+\texttt{A discussion of \{N\}ash equilibrium: \{R\}ecent work}
+\end{center}
+\item Make sure bibliographies are complete with page numbers, years, etc.
+
+\end{itemize}
+
+\item Refer to sections and figures using capitals:
+\begin{center}
+Section IV or Figure 3 or Fig.\ 3.
+\end{center}
+
+\item Always put parentheses around equation numbers:
+\begin{center}
+as shown in  (11), or as shown in eq.\ (11)
+\end{center}
+In the latter example, be sure to avoid the extra space after the period.
+
+\item When using ``respectively'', surround it by commas:
+\begin{center}
+The beginning and the end, respectively, are short and long.\\
+---or---\\
+The beginning and the end are short and long, respectively.
+\end{center}
+
+\item Avoid saying ``In this paper'' in the abstract.
+
+\item Always specify something after the word ``this'':
+\begin{center}
+This is an example. $\Rightarrow$ This sentence is an example.
+\end{center}
+
+\item If using the word ``we'', try to think of it as ``the readers and the writers'', e.g., in the way a live lecturer could say to the class, ``We will see that this approach is related to....''
+
+\item Never underline anything in text for the sake of emphasis. Rather, use \textit{italics} or \textbf{bold} or \textbf{\textit{bold-italics}} or even \textsc{smallcaps}.
+
+\item \textbf{\textit{Get in the habit}} of looking up answers to questions of style: ``when to use a semi-colon?'', ``where to insert commas for `i.e.' or `e.g.'?'', etc.
+
+\end{itemize}
+
+\end{document}
